@@ -1,15 +1,29 @@
-/* body{
-    background-color: black;
-} */
+body{
+    background-image:linear-gradient(to bottom right,#EA698B,#D55D92,#C05299,#AC46A1,#973AA8,#822FAF,#6D23B6,#6411AD,#571089,#47126B);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}   
 
-img {
-    
-    width: 50%;
-    height: 50%;
-    position:fixed;
-    top: 50%;
+
+ h1,p {
+    color: rgb(220, 241, 23); 
+    position: fixed;
+    /* top: 50%; */
     left: 50%;
+    font-family: 'DM Serif Display';
+    
  }
- h1{
-    color: white;
- }
+h1{
+    transform: translate(-50%, -20%);
+    font-size: 180%;
+
+}
+p{
+    transform: translate(-50%, 200%);
+    font-size: 90%;
+    margin: 0.5% 0%;
+}
+i{
+    vertical-align: middle;
+}
