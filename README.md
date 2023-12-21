@@ -2,7 +2,7 @@
 
 ## prototype
 
-![[Desktop - 1@2x.png]]
+<img src="Desktop - 1@2x.png">
 
 The cards will have following functionality:
 - will transform and size++ on mouse hover
