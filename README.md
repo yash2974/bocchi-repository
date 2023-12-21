@@ -1,6 +1,6 @@
 # <u>Project-bocchi-repo</u>
 
-## prototype
+## prototype.v1
 
 <img src="Desktop - 1@2x.png">
 
