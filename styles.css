@@ -20,6 +20,8 @@ body::before {
     background-attachment: fixed;
     filter: blur(5px); /* Adjust the blur amount as needed */
     z-index: -1;
+    transform: scale(1.2);
+    
 }
  h1,p {
     color: rgb(220, 241, 23); 
@@ -59,7 +61,7 @@ i{
    
 }
 a{
-    color: black;
+    color: rgba(220, 241, 23,0.3);
     text-decoration: none;
 }
 .about h2 i:nth-of-type(2){
@@ -115,25 +117,18 @@ img{
 }
  .text-container {
     position: absolute;
-    bottom: 3.5%;
     font-family: 'Alatsi', sans-serif;
     color: white;
-    font-size: 1.6vh;
-    /* padding: 10px; */
-    width: 100%; /* Make the text container full width */
+    font-size: 1vw;
+    width: 87%; /* Make the text container full width */
     box-sizing: border-box; 
     text-align: left;
     display: flex;
     align-items: center;
-    /* padding-left: 2vh;
-    padding-right: 2vh;
-    padding-bottom: 2vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh; */
-    /* bottom: 0.5vh; */
-    width: 90%;
-    /* bottom: 3vh; */
     height: 7vh;
+    margin-top:21vh;
+    
+    
  }
 
      
