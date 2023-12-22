@@ -1,24 +1,24 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Array of photos
+    // Array of photos  //need to add quality of photos in the array
     const yamada_array = [
-        'ryo (1).png',
         'ryo (2).png',
-        'ryo (3).png'
+        'ryo (2).png',
+        'ryo (2).png'
     ];
     const nijika_array = [
         'nijika (1).png',
-        'nijika (2).png',
-        'nijika (3).png'
+        'nijika (1).png',
+        'nijika (1).png'
     ];
     const bocchi_array = [
         'bocchi (1).png',
-        'bocchi (2).png',
-        'bocchi (3).png'
+        'bocchi (1).png',
+        'bocchi (1).png'
 
     ];
     const kita_array =[
-        'kita (1).png',
-        'kita (2).png',
+        'kita (3).png',
+        'kita (3).png',
         'kita (3).png'
     ]
 

@@ -17,3 +17,4 @@ The cards will have following functionality:
 ## Easter Egg
 - 0.01% possibility of spawning legendary bocchi
 - "<h1>" will act as a button to spawn a bocchi which will move from one end to another end and delete the element after reacheing the end.
+
