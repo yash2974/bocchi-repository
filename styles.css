@@ -1,18 +1,32 @@
 body{
-    background-image:linear-gradient(to bottom right,#EA698B,#D55D92,#C05299,#AC46A1,#973AA8,#822FAF,#6D23B6,#6411AD,#571089,#47126B);
+    /* background-image:linear-gradient(to bottom right,#EA698B,#D55D92,#C05299,#AC46A1,#973AA8,#822FAF,#6D23B6,#6411AD,#571089,#47126B); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
     margin: 0;
+    /* background-image:url("back.jpg"); */
     
-}   
-
-
+}  
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px); /* Adjust the blur amount as needed */
+    z-index: -1;
+}
  h1,p {
     color: rgb(220, 241, 23); 
     position: fixed;
     left: 50%;
     font-family: 'DM Serif Display';
+    margin:1vw 0;
     
  }
 h1{
@@ -62,24 +76,26 @@ margin: 0 0 0 10px;
     width: 100%;
     align-items: center;
     justify-content: center;   
+    z-index: 2;
     
 }
 
-.card1,.card2,.card3{
+.card1,.card2,.card3,.card4{
     display: flex;
-    margin: 5%;
+    margin: 2%;
     justify-content: center;
     /* background-color: white; */
     /* background-image: linear-gradient rgba(to right bottom,#1400FF,#18104E); */
     background: linear-gradient(rgba(20, 0, 255, 0.42), rgba(24, 16, 78, 0.64));
-    height: 31.5vw;
-    width: 18vw;
+    height: 31vw;
+    width: 18%;
+    /* background-size: cover; */
     border-radius: 14px;
     
 }
 .card1{
     position: relative;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     background: linear-gradient(to right bottom,rgba(20, 0, 255, 0.42), rgba(24, 16, 78, 0.64));
 }
 .card2{
@@ -87,9 +103,12 @@ margin: 0 0 0 10px;
 
 }
 .card3{
-    margin-right:120px ;
     background: linear-gradient(to right bottom,rgba(255, 0, 229, 0.15), rgba(255, 255, 255, 0.21));
    
+}
+.card4{
+    /* margin-right: 120px; */
+    background:#47126B;
 }
 img{
     margin:7% auto 35%  ;
