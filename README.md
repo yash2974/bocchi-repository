@@ -15,4 +15,5 @@ The cards will have following functionality:
 - the random image will dissapear and a random animation inside the container will be displayed until its still on hover.
 
 ## Easter Egg
-- 0.01% possibility of spawning legendary bocchi 
+- 0.01% possibility of spawning legendary bocchi
+- "<h1>" will act as a button to spawn a bocchi which will move from one end to another end and delete the element after reacheing the end.
