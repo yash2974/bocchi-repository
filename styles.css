@@ -79,6 +79,9 @@ margin: 0 0 0 10px;
     align-items: center;
     justify-content: center;   
     z-index: 2;
+    margin: auto 0 auto 0;
+    padding: 0;
+
     
 }
 
@@ -98,19 +101,19 @@ margin: 0 0 0 10px;
 .card1{
     position: relative;
     /* margin-left: 120px; */
-    background: linear-gradient(to right bottom,rgba(20, 0, 255, 0.42), rgba(24, 16, 78, 0.64));
+    background: linear-gradient(to right bottom,rgba(20, 0, 255, 0.42), rgba(24, 16, 78, 0.35));
 }
 .card2{
     background: linear-gradient(to right bottom,rgba(255, 245, 0, 0.46), rgba(217, 181, 128, 0.56));
 
 }
 .card3{
-    background: linear-gradient(to right bottom,rgba(255, 0, 229, 0.15), rgba(255, 255, 255, 0.21));
+    background: linear-gradient(to right bottom,rgba(255, 0, 229, 0.43), rgba(255, 255, 255, 0.21));
    
 }
 .card4{
     /* margin-right: 120px; */
-    background:#47126B;
+    background: linear-gradient(to right bottom,rgba(255,0,0,0.61),rgba(253,255,255,0.60));
 }
 img{
     margin:7% auto 35%  ;

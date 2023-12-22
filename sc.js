@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
         'bocchi (3).png'
 
     ];
+    const kita_array =[
+        'kita (1).png',
+        'kita (2).png',
+        'kita (3).png'
+    ]
 
     // Get a random index
     let randomIndex = Math.floor(Math.random() * yamada_array.length);
@@ -24,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ryo-random').src = `./ryo-array/${yamada_array[randomIndex]}`;
     document.getElementById('nijika-random').src = `./nijika-array/${nijika_array[randomIndex]}`;
     document.getElementById('bocchi-random').src = `./bocchi-array/${bocchi_array[randomIndex]}`;
+    document.getElementById('kita-random').src = `./kita-array/${kita_array[randomIndex]}`;
     
     
 });
