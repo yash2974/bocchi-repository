@@ -153,7 +153,21 @@ img{
         transform: scale(1.1);
         
 }
+.card-container .text-container:hover{
+    transform: scale(1);
+
+}
+.card1 img,.card1 .text-container,
+.card2 img,.card2 .text-container,
+.card3 img,.card3 .text-container,
+.card4 img,.card4 .text-container{
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
     
-.card-container div:hover .text-container {
-        transform: scale(1); /* Reset scaling for the text container */
+}
+.card1:hover img,.card1:hover .text-container,
+.card2:hover img,.card2:hover .text-container,
+.card3:hover img,.card3:hover .text-container,
+.card4:hover img,.card4:hover .text-container{
+    opacity: 0;
 }

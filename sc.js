@@ -32,4 +32,5 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('kita-random').src = `./kita-array/${kita_array[randomIndex]}`;
     
     
+    
 });
