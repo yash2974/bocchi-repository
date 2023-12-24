@@ -132,13 +132,14 @@ img{
     position: absolute;
     font-family: 'Alatsi', sans-serif;
     color: white;
-    font-size: 1vw;
+    font-size: 0.956vw;
     width: 87%; /* Make the text container full width */
     text-align: left;
     align-items: center;
     /* height: 7vh; */
     bottom: 0;
     margin-bottom: 5%;
+    margin-top: 5%;
     
     
  }
