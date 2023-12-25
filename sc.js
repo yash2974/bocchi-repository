@@ -30,7 +30,60 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('nijika-random').src = `./nijika-array/${nijika_array[randomIndex]}`;
     document.getElementById('bocchi-random').src = `./bocchi-array/${bocchi_array[randomIndex]}`;
     document.getElementById('kita-random').src = `./kita-array/${kita_array[randomIndex]}`;
-    
-    
-    
+
+
+    // var mp3 = document.getElementById('hovercontrol');
+    // var card1 = document.querySelector('.card1');
+
+    // card1.addEventListener('mouseenter', function() {
+    //     mp3.currentTime = 0;
+    //     mp3.play();
+    // });
+
+    // card1.addEventListener('mouseleave', function() {
+    //     mp3.pause();
+    // });
+
+    var mp3=document.getElementById("hovercontrol");
+    var card1=document.querySelector(".card1");
+        card1.addEventListener('mouseenter', function(){
+            mp3.currentTime=0;
+            mp3.play(); 
+        }
+        );
+        card1.addEventListener('mouseleave', function(){
+            mp3.pause(); 
+        }
+        );
+        var card2=document.querySelector(".card2");
+        card2.addEventListener('mouseenter', function(){
+            mp3.currentTime=0;
+            mp3.play(); 
+        }
+        );
+        card2.addEventListener('mouseleave', function(){
+            mp3.pause(); 
+        }
+        );
+        var card3=document.querySelector(".card3");
+        card3.addEventListener('mouseenter', function(){
+            mp3.currentTime=0;
+            mp3.play(); 
+        }
+        );
+        card3.addEventListener('mouseleave', function(){
+            mp3.pause(); 
+        }
+        );
+        var card4=document.querySelector(".card4");
+        card4.addEventListener('mouseenter', function(){
+            mp3.currentTime=0;
+            mp3.play(); 
+        }
+        );
+        card4.addEventListener('mouseleave', function(){
+            mp3.pause(); 
+        }
+        );
+
 });

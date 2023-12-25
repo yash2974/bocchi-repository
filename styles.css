@@ -173,3 +173,7 @@ img{
 .card4:hover img,.card4:hover .text-container{
     opacity: 0;
 }
+.card1 audio{
+    opacity: 0;
+}
+
