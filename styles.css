@@ -167,10 +167,10 @@ img{
     transition: opacity 0.3s ease-in-out;
     
 }
-.card1:hover img,.card1:hover .text-container,
-.card2:hover img,.card2:hover .text-container,
-.card3:hover img,.card3:hover .text-container,
-.card4:hover img,.card4:hover .text-container{
+.card1:hover img,
+.card2:hover img,
+.card3:hover img,
+.card4:hover img{
     opacity: 0;
 }
 .card1 audio{
