@@ -22,6 +22,7 @@ body::before {
     z-index: -1;
     transform: scale(1.2);
     
+    
 }
  h1,p {
     color: rgb(220, 241, 23); 
