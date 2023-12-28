@@ -6,6 +6,7 @@ body{
     margin: 0;
     /* background-image:url("back.jpg"); */
     
+    
 }  
 body::before {
     content: '';
