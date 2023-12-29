@@ -166,7 +166,7 @@ img{
 .card3 img,.card3 .text-container,
 .card4 img,.card4 .text-container{
     opacity: 1;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
     
 }
 .card1:hover img,
@@ -175,7 +175,52 @@ img{
 .card4:hover img{
     opacity: 0;
 }
-.card1 audio{
+.card1 video,.card2 video,.card3 video,.card4 video {
+    width: 85%;
+    height: 75%;
+    object-fit: cover;
+    /* border-radius: 14px; */
+    transition: opacity 0.3s ease-in-out;
     opacity: 0;
+    margin: 7% 0 0 0;
 }
 
+.card1:hover video,.card2 video:hover,.card3 video:hover,.card4 video:hover {
+    opacity: 1;
+    position: absolute;
+    /* margin-top:7% ;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 0; */
+    height: 75%;
+    width:85%;
+    margin: 7% 0 0 0;
+}
+#popup{
+    background-color: black;
+    font-family: 'DM Serif Display';
+    color:white;
+    width: 20vw;
+    height: 7vw;
+    padding: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 1.2vw;;
+    
+    
+
+}
+#popup button{
+    margin-left: 50%;
+    margin-bottom: 0;
+    margin-top: 0;
+    transform: translate(-50%);
+    
+    
+}
+#popup h6{
+    margin:0;
+}
