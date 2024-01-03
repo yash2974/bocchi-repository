@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function(){
+document.getElementById("clk").addEventListener("click", poponclick);
+    function poponclick(){
+        document.getElementById("popup").style.display = "none";
+        
+        
+    }
+})
+
 document.addEventListener('DOMContentLoaded', function() {
     // Array of photos  //need to add quality of photos in the array
     const yamada_array = [
@@ -44,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const kita_video_array = [
         'kitVid (1).webm'
     ];
+
+    
+   
+    
 
     // Get a random index
     let randomIndex = Math.floor(Math.random() * yamada_array.length);

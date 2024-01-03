@@ -53,7 +53,7 @@ p{
     margin: 0;
     padding: 0;
     text-align: center;
-    font-size: 1vw;
+    font-size: 0.7em;
 
     
 }
@@ -106,22 +106,25 @@ margin: 0 0 0 10px;
     position: relative;
     /* margin-left: 120px; */
     background: linear-gradient(to right bottom,rgba(20, 0, 255, 0.42), rgba(24, 16, 78, 0.35));
+    box-shadow: 0 0 1em rgba(20, 0, 255, 0.42);
+    
 }
 .card2{
     position: relative;
     background: linear-gradient(to right bottom,rgba(255, 245, 0, 0.46), rgba(217, 181, 128, 0.56));
-
+    box-shadow: 0 0 1em rgba(255, 245, 0, 0.46);
 }
 .card3{
     position: relative;
     background: linear-gradient(to right bottom,rgba(255, 0, 229, 0.43), rgba(255, 255, 255, 0.21));
-   
+    box-shadow: 0 0 1em rgba(255, 0, 229, 0.43);
 }
 .card4{
     position: relative;
     /* margin-right: 120px; */
     background: linear-gradient(to right bottom,rgba(255,0,0,0.61),rgba(253,255,255,0.60));
-}
+    box-shadow: 0 0 1em rgba(255,0,0,0.61);
+}   
 img{
     position: absolute;
     /* margin-top:7% ;
@@ -196,10 +199,10 @@ img{
     width:85%;
     margin: 7% 0 0 0;
 }
-#popup{
-    background-color: black;
+#popup {
+    background-color: rgba(255, 255, 255, 0.5);
     font-family: 'DM Serif Display';
-    color:white;
+    color: rgb(0, 0, 0);
     width: 20vw;
     height: 7vw;
     padding: 5px;
@@ -208,19 +211,20 @@ img{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 3;
-    font-size: 1.2vw;;
-    
-    
+    font-size: 1.7vw;
+    border-radius: 14px;
+    text-align: left; /* Center text and inline elements horizontally */
 
 }
-#popup button{
+
+#popup button {
+    position: relative; /* Make the button a block-level element to center it */
     margin-left: 50%;
-    margin-bottom: 0;
-    margin-top: 0;
     transform: translate(-50%);
-    
-    
+    margin-top: 5%;
+
 }
+
 #popup h6{
-    margin:0;
+    margin:2%;
 }
