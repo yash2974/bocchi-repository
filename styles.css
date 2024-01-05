@@ -223,3 +223,28 @@ img{
 #popup h6{
     margin:2%;
 }
+.popupImageDiv{
+    background-color: black;
+    font-family: 'DM Serif Display';
+    color: rgb(0, 0, 0);
+    width: 70vw;
+    height: 40vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+    font-size: 1.7vw;
+    border-radius: 14px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+
+    
+    display: none;
+
+}
+#popupImage{
+    margin-left: 9%;
+}
