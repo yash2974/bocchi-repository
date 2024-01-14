@@ -26,60 +26,39 @@ body::before {
     
     
 }
- h1,p {
+ h1,p ,.fa-brands{
     color: rgb(220, 241, 23); 
     position: relative;
     font-family: 'DM Serif Display';
     margin: 0;
-    
+}
+h1{
+    margin-left: auto;
+}
+ .fa-brands {
+    font-size: 40px;
     
     
  }
  .h1Background{
-    background-color: black;
+    background-color: rgba(0, 0, 0,80%);
     margin: 0;
     text-align: center;
-    padding: 0.6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1% 0;
+    
     
  }
  
 
 
-.about{
-    position: absolute;
-    top:100%;
-    transform: translate(0,-100%);
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 0.7em;
-    
 
-    
-}
-i{
-    vertical-align:text-bottom;
-
-
-   
-}
-a{
-    color: rgba(220, 241, 23,0.3);
-    text-decoration: none;
-
-}
-.about h2 i:nth-of-type(2){
-margin: 0 0 0 10px;
-}
-.about h2 i:nth-of-type(1){
-    margin: 0;
-}
 .card-container{
     display: flex;
-    position:absolute;
-    top: 50%;
-    bottom: 50%;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: center;   
