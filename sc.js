@@ -25,6 +25,8 @@ const randomFeature = [
     }
 
 ];
+
+
 //for random value
 function randomIndexFunction(array){
     let randomIndex = Math.floor(Math.random() * array.length);
@@ -36,8 +38,31 @@ function popupHidden(){
     document.getElementById("allow").addEventListener("click",function(){
         console.log("clicked")
         document.getElementById("popup").style.display="none";
+
+        document.getElementById("card1id").addEventListener("mouseover",()=>{
+
+            document.getElementById("ryo-random").style.display="none";
+            document.getElementById("ryo-random-video").src="./allVideos/bocVid (1).webm";
+            document.getElementById("ryo-random-video").style.display="block";
+
+            document.getElementById("ryo-random-video").play();
+            document.getElementById("ryo-random-video").addEventListener("ended",()=>{
+                document.getElementById("ryo-random-video").currentTime=0;
+                document.getElementById("ryo-random-video").play();
+
+            })
+
         
-        videoFeature();
+        });
+
+        document.getElementById("card1id").addEventListener("mouseout",()=>{
+            document.getElementById("ryo-random").style.display="block";
+            document.getElementById("ryo-random-video").style.display="none";
+
+            document.getElementById("ryo-random-video").pause();
+            document.getElementById("ryo-random-video").currentTime=0;
+        })
+        
     
         
     });
