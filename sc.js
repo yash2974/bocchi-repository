@@ -25,16 +25,39 @@ const randomFeature = [
     }
 
 ];
-
+//for random value
 function randomIndexFunction(array){
     let randomIndex = Math.floor(Math.random() * array.length);
     return randomIndex;
 }
 
+//post clicking on allow
+function popupHidden(){
+    document.getElementById("allow").addEventListener("click",function(){
+        console.log("clicked")
+        document.getElementById("popup").style.display="none";
+        
+        videoFeature();
+    
+        
+    });
+    
+}
+
+
+    
 document.addEventListener('DOMContentLoaded',function(){
 
     randomFeature.forEach((category)=>{
         document.getElementById(`${category.name}-random`).src = `./allPhotos/${category.randomImage[randomIndexFunction(category.randomImage)]}`;
     });
+    
+    popupHidden();
+    
+    
+
+    
+    
 
 })
+
