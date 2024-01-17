@@ -1,20 +1,14 @@
 # <u>Project-bocchi-repo</u>
 
-## prototype.v1
+## prototype.v2
 
-<img src="Desktop - 2.png">
+<img src="./allPhotos/Desktop - 2@2x"
 
-The cards will have following functionality:
-- will transform and size++ on mouse hover
-- upon click the cards will get disabled and a transparent gif of the following character will be displayed
-- after a specific time they will reappear again with some animation.
+Yearning to make friends and perform live with a band, lonely and socially anxious Hitori "Bocchi" Gotou devotes her time to playing the guitar. On a fateful day, Bocchi meets the outgoing drummer Nijika Ijichi, who invites her to join Kessoku Band when their guitarist, Ikuyo Kita, flees before their first show. Soon after, Bocchi meets her final bandmate—the cool bassist Ryou Yamada.
 
-## Alternate end
-- the animation will be played inside the card1,card2,card3.
-- on::hover
-- the random image will dissapear and a random animation inside the container will be displayed until its still on hover.
+Although their first performance together is subpar, the girls feel empowered by their shared love for music, and they are soon rejoined by Kita. Finding happiness in performing, Bocchi and her bandmates put their hearts into improving as musicians while making the most of their fleeting high school days.
 
-## Easter Egg
-- 0.01% possibility of spawning legendary bocchi
-- heading will act as a button to spawn a bocchi which will move from one end to another end and delete the element after reacheing the end.
+## Javascript implementation 
+
+
 
