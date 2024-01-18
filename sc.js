@@ -42,7 +42,7 @@ function popupHidden(){
         document.getElementById("card1id").addEventListener("mouseover",()=>{
 
             document.getElementById("ryo-random").style.display="none";
-            document.getElementById("ryo-random-video").src="./allVideos/bocVid (1).webm";
+            document.getElementById("ryo-random-video").src=`./allVideos/${randomFeature[0].randomVideo[randomIndexFunction(randomFeature[0].randomVideo)]}`;
             document.getElementById("ryo-random-video").style.display="block";
 
             document.getElementById("ryo-random-video").play();
