@@ -38,40 +38,51 @@ function popupHidden(){
     document.getElementById("allow").addEventListener("click",function(){
         console.log("clicked")
         document.getElementById("popup").style.display="none";
+        document.getElementById("card1id").addEventListener("mouseover",()=>videoFunction(1,"ryo"));
+        document.getElementById("card2id").addEventListener("mouseover",()=>videoFunction(2,"nijika"));
+        document.getElementById("card3id").addEventListener("mouseover",()=>videoFunction(3,"bocchi"));
+        document.getElementById("card4id").addEventListener("mouseover",()=>videoFunction(4,"kita"));
 
-        document.getElementById("card1id").addEventListener("mouseover",()=>{
-
-            document.getElementById("ryo-random").style.display="none";
-            document.getElementById("ryo-random-video").src=`./allVideos/${randomFeature[0].randomVideo[randomIndexFunction(randomFeature[0].randomVideo)]}`;
-            document.getElementById("ryo-random-video").style.display="block";
-
-            document.getElementById("ryo-random-video").play();
-            document.getElementById("ryo-random-video").addEventListener("ended",()=>{
-                document.getElementById("ryo-random-video").currentTime=0;
-                document.getElementById("ryo-random-video").play();
-
-            })
-
-        
-        });
-
-        document.getElementById("card1id").addEventListener("mouseout",()=>{
-            document.getElementById("ryo-random").style.display="block";
-            document.getElementById("ryo-random-video").style.display="none";
-
-            document.getElementById("ryo-random-video").pause();
-            document.getElementById("ryo-random-video").currentTime=0;
-        })
-        
-    
-        
     });
+    
+}
+//video func generalize
+function videoFunction(id,name){
+    document.getElementById(`card${id}id`).addEventListener("mouseover",()=>{
+
+        document.getElementById(`${name}-random`).style.display="none";
+        document.getElementById(`${name}-random-video`).style.display="block";
+        
+
+        document.getElementById(`${name}-random-video`).play();
+        document.getElementById(`${name}-random-video`).addEventListener("ended",()=>{
+            document.getElementById(`${name}-random-video`).currentTime=0;
+            document.getElementById(`${name}-random-video`).play();
+
+        })
+
+    
+    });
+
+    document.getElementById(`card${id}id`).addEventListener("mouseout",()=>{
+        document.getElementById(`${name}-random`).style.display="block";
+        document.getElementById(`${name}-random-video`).style.display="none";
+
+        document.getElementById(`${name}-random-video`).pause();
+        document.getElementById(`${name}-random-video`).currentTime=0;
+    })
     
 }
 
 
     
 document.addEventListener('DOMContentLoaded',function(){
+
+    document.getElementById("ryo-random-video").src=`./allVideos/${randomFeature[0].randomVideo[randomIndexFunction(randomFeature[0].randomVideo)]}`;
+    document.getElementById("nijika-random-video").src=`./allVideos/${randomFeature[1].randomVideo[randomIndexFunction(randomFeature[1].randomVideo)]}`;
+    document.getElementById("bocchi-random-video").src=`./allVideos/${randomFeature[2].randomVideo[randomIndexFunction(randomFeature[2].randomVideo)]}`;
+    document.getElementById("kita-random-video").src=`./allVideos/${randomFeature[3].randomVideo[randomIndexFunction(randomFeature[3].randomVideo)]}`;
+
 
     randomFeature.forEach((category)=>{
         document.getElementById(`${category.name}-random`).src = `./allPhotos/${category.randomImage[randomIndexFunction(category.randomImage)]}`;
